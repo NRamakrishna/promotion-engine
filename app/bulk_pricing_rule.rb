@@ -17,12 +17,10 @@ class BulkPricingRule < PricingRule
   end
 
   # Get the sum price for bulk buying items
-  #
-  # @param quantity quantity of items bought
-  # @return the sum price
   def price_for(quantity)
     packages = quantity / @items_in_package
     modulo = quantity % @items_in_package
-    (packages * @package_price) + (modulo * @item_price)
+    offer = ((@items_in_package * @item_price) - @package_price)
+     (quantity * @item_price) - (packages * offer)
   end
 end
