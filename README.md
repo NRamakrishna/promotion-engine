@@ -24,6 +24,19 @@ Scenario A
 * 1 * B     30
 * 1 * C     20 <br/>
   Total     100
+  
+Scenario B
+* 5 * A     130 + 2*50
+* 5 * B     45 + 45 + 30
+* 1 * C     20 <br/>
+ Total     370
+
+Scenario C
+* 3 * A     130
+* 5 * B     45 + 45 + 1 * 30
+* 1 * C     -
+* 1 * D     30 <br/>
+  Total     280
 
 The interface to the checkout should look like:
 
