@@ -41,12 +41,7 @@ Scenario C
 The interface to the checkout should look like:
 
 ```ruby
-co = CheckOut.new(pricing_rules)
-co.scan(item)
-co.scan(item)
-...
-price = co.total
-
+promotion.rb
 ```
 
 # Running the solution
