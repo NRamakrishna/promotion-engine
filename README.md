@@ -24,3 +24,23 @@ Scenario A
 * 1 * B     30
 * 1 * C     20 <br/>
   Total     100
+
+The interface to the checkout should look like:
+
+```ruby
+co = CheckOut.new(pricing_rules)
+co.scan(item)
+co.scan(item)
+...
+price = co.total
+
+```
+
+# Running the solution
+
+Bundle and run the specs:
+
+```bash
+bundle
+rspec
+```
